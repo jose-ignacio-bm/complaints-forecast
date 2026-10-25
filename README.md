@@ -115,3 +115,7 @@ outputs/candidate/, production/    forecast.csv, weekly_totals.csv, forecast.png
 outputs/*_2026Q1.*                 the notebook's own copy of the forecast
 requirements.txt
 ```
+
+## Bonus: does a foundation model help?
+
+The notebook's last section scores zero-shot Chronos-Bolt (small) on the same backtest. It averages MASE 1.47, beating seasonal naive with no fitting, but loses to DHR in the forecast season (1.66 vs 1.37), so DHR stays. Running that section needs `autogluon.timeseries==1.6.3` (which includes Chronos) on top of `requirements.txt`; the pipeline itself doesn't.

@@ -1,0 +1,13 @@
+# environment.yml
+name: complaints-forecast
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - autogluon.timeseries==1.6.3
+      - statsmodels
+      - matplotlib
+      - openpyxl
+      - ipykernel
+      - pytest
