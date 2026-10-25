@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+
+# Editor and OS files (VS Code settings can contain local paths)
+.vscode/
+.DS_Store
+
+# AutoGluon / Chronos, if the bonus is run
+AutogluonModels/
+lightning_logs/environment.yml

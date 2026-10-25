@@ -1,0 +1,55 @@
+{
+  "created_at": "2026-10-25T23:00:33+00:00",
+  "data": {
+    "start": "2023-01-01",
+    "end": "2025-12-31",
+    "days": 1096,
+    "days_without_target": 53
+  },
+  "config": {
+    "model": "DHR",
+    "fourier_pairs": 2,
+    "order": [
+      1,
+      0,
+      0
+    ],
+    "recent_days": 365,
+    "horizon": 90
+  },
+  "trained_until": "2025-12-31",
+  "forecast_window": [
+    "2026-01-01",
+    "2026-03-31"
+  ],
+  "holdout": {
+    "window": [
+      "2025-10-03",
+      "2025-12-31"
+    ],
+    "scores": {
+      "candidate": {
+        "MAE": 24.422,
+        "MASE": 1.394,
+        "weekly_APE_%": 8.766,
+        "bias_%": -3.581,
+        "cover_80": 0.782,
+        "cover_95": 0.92,
+        "width_80_%": 76.326
+      },
+      "seasonal_naive": {
+        "MAE": 26.609,
+        "MASE": 1.519,
+        "weekly_APE_%": 9.155,
+        "bias_%": -3.254,
+        "cover_80": 0.943,
+        "cover_95": 0.977,
+        "width_80_%": 144.819
+      }
+    },
+    "production_comparison": "no production model yet"
+  },
+  "beats_seasonal_naive": true,
+  "candidate_vs_production": null,
+  "promoted_at": "2026-10-25T23:02:12+00:00"
+}

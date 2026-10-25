@@ -1,0 +1,7 @@
+# Python 3.11
+numpy==2.4.6
+pandas==2.3.3
+scipy==1.15.3
+statsmodels==0.15.0
+matplotlib==3.11.2
+ipykernel==7.4.0  # only needed to run the notebook
